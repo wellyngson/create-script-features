@@ -2,7 +2,7 @@ import org.gradle.api.tasks.*
 
 tasks.register("createfeature") {
     group = "custom"
-    description = "Creates a new feature in the Android project"
+    description = "Creates a new feature in the Android project - Developed by: @wellyngson"
 
     val featureName: String by project
 
@@ -268,6 +268,11 @@ fun createDataFiles(
     val domainServicePackagePath = "${featureDir.path}/service"
     val domainServiceDir = file(domainServicePackagePath)
     domainServiceDir.mkdirs()
+
+    // Database
+    val domainDatabasePackagePath = "${featureDir.path}/database"
+    val domainDataBaseDir = file(domainDatabasePackagePath)
+    domainDataBaseDir.mkdirs()
 
 //    val domainRepositoryFiles =
 //        listOf(

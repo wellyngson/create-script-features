@@ -1,4 +1,4 @@
-package welias.createscriptsfeatures.ui.theme
+package welias.createscriptsfeatures.features.theme
 
 import androidx.compose.ui.graphics.Color
 
